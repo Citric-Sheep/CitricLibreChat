@@ -27,6 +27,7 @@ RUN \
     npm cache clean --force
 
 RUN mkdir -p /app/client/public/images /app/api/logs
+RUN alias docker-compose='docker compose'
 
 # Node API setup
 EXPOSE 3080
